@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xvw:root xmlns:xeo="http://www.netgest.net/xeo/xeo" xmlns:xvw="http://www.netgest.net/xeo/xvw">
+    <xvw:viewer beanClass="netgest.bo.xwc.xeo.controllers.beans.EditBean" beanId="viewBean" controllerClass='netgest.bo.xwc.xeo.controllers.EditController'>
+        
+        <xvw:toolBar>
+        	<xvw:menu text='Save' iconCls='ui-icon-check' serverAction="#{controller.save}"></xvw:menu>
+        	<xvw:menu text='Delete' iconCls="ui-icon-delete"></xvw:menu>
+        </xvw:toolBar>
+        
+        <xvw:attribute objectAttribute="username"></xvw:attribute>
+        
+    </xvw:viewer>
+</xvw:root>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xvw:root xmlns:xeo="http://www.netgest.net/xeo/xeo" xmlns:xvw="http://www.netgest.net/xeo/xvw" xmlns:m="http://www.corrspt.com/mobix">
+    <xvw:viewer beanClass="com.corrspt.mobix.examples.beans.MainBean" beanId="viewBean" controllerClass='com.corrspt.mobix.examples.controllers.MainExampleController'>
+    
+    <!-- Form wrapping everything up -->
+    <xvw:form id='mainForm'>
+    
+    <div data-role="page">
+		<div data-role="header">
+			<h1 class="ui-title" role="heading" aria-level="1">Header</h1>
+			<a href="#leftpanel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a>
+		</div>
+		<div role="main" class="ui-content">
+			<xvw:applicationContainer id='appContainer'></xvw:applicationContainer>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<m:navTabs id='tabsFoter'>
+				<m:navTab text="Books" id='tab1' icon="grid" action="#{controller.openViewer}" value='{viewerName : "actionButton.xvw"}'></m:navTab>
+				<m:navTab text="Authors" id='tab2' icon='star' action="#{controller.openViewer}" value='{viewerName : "examples/inputs.xvw"}'></m:navTab>
+				<m:navTab text="Messages" id='tab3' icon='gear' action="#{controller.listObject}" value='{viewerName : "list.xvw", boql : "select Ebo_Perf"}'></m:navTab>
+			</m:navTabs>
+		</div> <!-- /footer -->
+		
+		<!-- Left Menu Panel -->
+		<xvw:treePanel id='leftpanel'>
+			<xvw:menu text="Library">
+				<xvw:menu text='Books' id='books' serverAction="#{controller.openViewer}" value='{viewerName : "actionButton.xvw"}'></xvw:menu>
+				<xvw:menu text='Authors' serverAction="#{controller.openViewer}" value='{viewerName : "examples/inputs.xvw"}'></xvw:menu>
+			</xvw:menu>
+			<xvw:menu text="Users">
+				<xvw:menu text='Librarians'></xvw:menu>
+				<xvw:menu text='Users'></xvw:menu>
+			</xvw:menu>
+		</xvw:treePanel>
+		
+	</div> <!-- /page -->
+    
+	</xvw:form>
+		
+    </xvw:viewer>
+</xvw:root>

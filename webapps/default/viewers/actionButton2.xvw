@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xvw:root xmlns:xeo="http://www.netgest.net/xeo/xeo" xmlns:xvw="http://www.netgest.net/xeo/xvw" xmlns:m="http://www.corrspt.com/mobix">
+    <xvw:viewer beanClass="netgest.bo.xwc.xeo.beans.XEOBaseBean" beanId="viewBean" controllerClass='com.corrspt.mobix.examples.controllers.ActionButtonController'>
+    	<m:actionButton id='ab2' label="Teste 2" action="#{controller.navigate2}"></m:actionButton>
+    </xvw:viewer>
+</xvw:root>

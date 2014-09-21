@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xwc:config xmlns:xwc="http://www.netgest.net/xeo/xwc">
+    <xwc:renderKits>
+        <xwc:renderKit componentNamespace="xvw" name="XEOJQUERY">
+            <xwc:render for="applicationContainer">netgest.bo.xwc.framework.components.ApplicationContainer$XEOHTMLRenderer</xwc:render>
+            <xwc:render for="attributeText">com.corrspt.mobix.components.renderers.AttributeTextRenderer</xwc:render>
+            <xwc:render for="attributeNumber">com.corrspt.mobix.components.renderers.AttributeNumberRenderer</xwc:render>
+            <xwc:render for="attributeDate">com.corrspt.mobix.components.renderers.AttributeDateRenderer</xwc:render>
+            <xwc:render for="attributeLov">com.corrspt.mobix.components.renderers.AttributeLovRenderer</xwc:render>
+            <xwc:render for="attributeLabel">com.corrspt.mobix.components.renderers.AttributeLabelRenderer</xwc:render>
+            <xwc:render for="attribute">com.corrspt.mobix.components.renderers.AttributeRenderer</xwc:render>
+            <xwc:render for="toolBar">com.corrspt.mobix.components.renderers.ToolbarRenderer</xwc:render>
+            <xwc:render for="gridPanel">com.corrspt.mobix.components.renderers.GridPanelRenderer</xwc:render>
+        </xwc:renderKit>
+        
+        <xwc:renderKit componentNamespace="m" name="XEOJQUERY">
+            <xwc:render for="actionButton">com.corrspt.mobix.components.renderers.ActionButtonRenderer</xwc:render>
+            <xwc:render for="navTabs">com.corrspt.mobix.components.navTabs$XEOHTMLRenderer</xwc:render>
+            <xwc:render for="treePanel">com.corrspt.mobix.components.renderers.TreePanelRenderer</xwc:render>
+            <xwc:render for="navTab">com.corrspt.mobix.components.navTab$XEOHTMLRenderer</xwc:render>
+        </xwc:renderKit>
+        
+    </xwc:renderKits>
+    <xwc:components namespace="m">
+        <xwc:component name="actionButton">
+            <xwc:className>netgest.bo.xwc.components.classic.ActionButton</xwc:className>
+            <xwc:description/>
+        </xwc:component>
+        <xwc:component name="treePanel">
+            <xwc:className>netgest.bo.xwc.components.classic.TreePanel</xwc:className>
+            <xwc:description/>
+        </xwc:component>
+        <xwc:component name="navTabs">
+            <xwc:className>com.corrspt.mobix.components.navTabs</xwc:className>
+            <xwc:description>A NavTabs component</xwc:description>
+        </xwc:component>
+        <xwc:component name="navTab">
+            <xwc:className>com.corrspt.mobix.components.navTab</xwc:className>
+            <xwc:description>Nav Tab component</xwc:description>
+        </xwc:component>
+    </xwc:components>
+</xwc:config>
