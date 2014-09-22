@@ -8,15 +8,22 @@
     <div data-role="page">
 		<div data-role="header">
 			<h1 class="ui-title" role="heading" aria-level="1">Header</h1>
-			<a href="#leftpanel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" data-role="button" role="button">Menu</a>
+			<a href="#leftpanel" 
+				data-icon="bars" 
+				data-iconpos="notext" 
+				data-shadow="false" 
+				data-iconshadow="false" 
+				class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" 
+				data-role="button" 
+				role="button">Menu</a>
 		</div>
 		<div role="main" class="ui-content">
-			<xvw:applicationContainer id='appContainer'></xvw:applicationContainer>
+			<xvw:applicationContainer id='appContainer' _view="#{viewBean.main}" ></xvw:applicationContainer>
 		</div>
 		
 		<div data-role="footer" data-position="fixed">
 			<m:navTabs id='tabsFoter'>
-				<m:navTab text="Books" id='tab1' icon="grid" action="#{controller.openViewer}" value='{viewerName : "actionButton.xvw"}'></m:navTab>
+				<m:navTab text="Books" id='tab1' icon="grid" action="#{controller.openViewer}" value='{viewerName : "errorMessage.xvw"}'></m:navTab>
 				<m:navTab text="Authors" id='tab2' icon='star' action="#{controller.openViewer}" value='{viewerName : "examples/inputs.xvw"}'></m:navTab>
 				<m:navTab text="Messages" id='tab3' icon='gear' action="#{controller.listObject}" value='{viewerName : "list.xvw", boql : "select Ebo_Perf"}'></m:navTab>
 			</m:navTabs>

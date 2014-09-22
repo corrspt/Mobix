@@ -11,6 +11,7 @@
             <xwc:render for="attribute">com.corrspt.mobix.components.renderers.AttributeRenderer</xwc:render>
             <xwc:render for="toolBar">com.corrspt.mobix.components.renderers.ToolbarRenderer</xwc:render>
             <xwc:render for="gridPanel">com.corrspt.mobix.components.renderers.GridPanelRenderer</xwc:render>
+            <xwc:render for="errorMessages">com.corrspt.mobix.components.renderers.ErrorMessageRenderer</xwc:render>
         </xwc:renderKit>
         
         <xwc:renderKit componentNamespace="m" name="XEOJQUERY">

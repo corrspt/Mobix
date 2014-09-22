@@ -1,5 +1,7 @@
 package com.corrspt.mobix.theme;
 
+import static netgest.bo.xwc.components.HTMLTag.DIV;
+
 import java.io.IOException;
 
 import com.lowagie.text.html.HtmlTags;
@@ -67,13 +69,14 @@ public class MobixTheme implements XUITheme {
 	@Override
 	public void writePostBodyContent(XUIRequestContext context,
 			XUIResponseWriter writer, XUIViewRoot viewRoot) throws IOException {
-		
+		writer.startElement(DIV);
+		writer.writeAttribute("id", viewRoot.getClientId());
 	}
 
 	@Override
 	public void writePreFooterContent(XUIRequestContext context,
 			XUIResponseWriter writer, XUIViewRoot viewRoot) throws IOException {
-		
+		writer.endElement(DIV);
 	}
 	
 	public final String composeUrl(String relUri) {
